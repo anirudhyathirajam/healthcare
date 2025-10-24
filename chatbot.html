@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Healthcare Chatbot</h1>
+        <p>Ask your health-related queries and get instant responses from our AI-powered chatbot.</p>
+        <textarea id="SymptomsInput" placeholder="Enter your symptoms...."></textarea>
+        <textarea id="botResponse" placeholder="Chatbot response will appear here..." readonly></textarea>
+        <br>
+        <button onclick="predictDisease()" class="submit">Submit</button>
+        <button onclick="clearFields()"  class="clear">Clear</button>
+    </div>
+ <script src="chatbot.js"></script>
+</body>
+</html>

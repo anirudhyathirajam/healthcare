@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,wght@0,900;1,900&family=Liter&family=Marcellus&family=Montserrat:ital,wght@0,600;1,600&family=Noto+Serif:ital,wght@0,900;1,900&family=Open+Sans:wght@800&family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,600;1,600&family=Smooch+Sans:wght@100..900&display=swap');
+
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+   
+}
+.container{
+    border: 1px solid whitesmoke;
+    width: 53vw;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+justify-content: center;
+padding: 30px;
+height: 45vh;
+box-shadow: 0px 4px 8px  16px whitesmoke;
+border-radius: 4px;
+}
+.document1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 160px;
+}
+.container h1{
+    font-family: "Roboto", sans-serif;
+}
+.container p {
+    font-family: "Quicksand", sans-serif;
+    margin-top: 3px;
+}
+.container select{
+    margin-top: 10px;
+    height: 4vh;
+    border-color: black;
+}
+.document2{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.submit{
+   
+    padding: 8px;
+    width: 6vw;
+    background-color: #a17fe0;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+}
+.clear{
+    padding: 8px;
+    width: 6vw;
+    background-color: #a17fe0;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Health Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0%;
+            padding: 0%;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #chat-window {
+            border: 1px solid #ccc;
+            height: 200px;
+            overflow-y: auto;
+            padding: 10px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Health Assistant</h1>
+    </header>
+    <main>
+        <section id="disease-prediction">
+            <h2>Disease Prediction</h2>
+            <input type="text" id="symptoms" placeholder="Enter symptoms">
+            <button onclick="predictDisease()">Predict</button>
+            <p id="prediction-result"></p>
+        </section>
+        
+        <section id="chatbot">
+            <h2>Chatbot</h2>
+            <div id="chat-window"></div>
+            <input type="text" id="chat-input" placeholder="Ask me anything...">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+        
+     
+    </main>
+    <script>
+        function predictDisease() {
+            let symptoms = document.getElementById('symptoms').value;
+            document.getElementById('prediction-result').innerText = "Predicting based on: " + symptoms;
+        }
+        
+        function sendMessage() {
+            let input = document.getElementById('chat-input').value;
+            let chatWindow = document.getElementById('chat-window');
+            let newMessage = document.createElement('p');
+            newMessage.textContent = "You: " + input;
+            chatWindow.appendChild(newMessage);
+            document.getElementById('chat-input').value = '';
+        }
+        
+        function getPrecaution() {
+            document.getElementById('precaution-result').innerText = "Stay hydrated and take necessary precautions.";
+        }
+    </script>
+    </body>
+    </html>
